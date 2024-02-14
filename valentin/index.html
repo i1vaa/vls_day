@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Day Tabs</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .tab-content {
+        display: none; /* Hide tab content by default */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tab-container">
+      <button class="tab" onclick="openTab(event, 'gifts')">Привітання</button>
+      <button class="tab" onclick="openTab(event, 'activities')">
+        Подарунок
+      </button>
+
+      <div id="gifts" class="tab-content">
+        <h1>❤️ Happy Valentine's Day ❤️</h1>
+        <h2>
+          Я люблю тебе більше ніж словами можу цe висловити! <br />
+          Дякую, що 1 лютого з'явився в моєму житті! <br />
+          Ти самий найкращий котік - комфотік, якого я тільки зустрічала !
+          <br />
+          Усе, що треба від життя - одружитися з тобою і створити сім’ю! <br />
+          Гарного тобі лютого, весни, 24 року! Зі мною 💖
+        </h2>
+        <h4>Твоя дівчина Іва ❤️‍🔥</h4>
+      </div>
+
+      <div id="activities" class="tab-content">
+        <h1>❤️ Подарунок ❤️</h1>
+        <h2>
+          Подарунок буде складатись з 3 частин - основна, мімішна і бонус <br />
+          Основна - для мого найкращого і сильного мальчіка, який хоче розвивати
+          своє тіло і далі - C21JW2R5VSP7 код для сайту Gymbeam.ua 💪🏻 <br />
+          Ти краще знаєш, що тобі потрібно для цього 💖 <br />
+          Мімішна - забереш будь - ласка з відділення 166 після 16 лютого 💖
+          <br />
+          Бонус - я ❤️
+        </h2>
+      </div>
+    </div>
+
+    <script>
+      function openTab(event, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+      }
+    </script>
+  </body>
+</html>

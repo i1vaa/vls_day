@@ -1,0 +1,49 @@
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab {
+  background-color: #f44336;
+  font-family: "Arial", sans-serif;
+  width: 500px;
+  font-size: 64px;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab:hover {
+  background-color: #d32f2f;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 80%;
+  background-color: pink;
+  margin-top: 30px;
+}
+
+.tab-content h2 {
+  color: #f44336;
+}
+
+.tab-content p {
+  color: #333;
+}
+body {
+  background-image: url(../valentin/images/ffad52d3f5c1b1b2b65df9c1fd5b477e.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
